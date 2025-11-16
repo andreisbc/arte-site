@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Concursul Național de Matematică</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(180deg, #e3f2fd, #ffffff);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .section-title {
+      text-align: center;
+      margin: 50px 0 30px;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+    .fade-in {
+      opacity: 0;
+      transition: opacity 2s ease-in;
+    }
+    .fade-in.visible {
+      opacity: 1;
+    }
+
+    /* Efect hover pentru cardurile din Teme Tehnologice */
+    .tech-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tech-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      z-index: 2;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Concursul Național de Matematică 2025</h1>
+    <p>Descoperă geniul din tine și câștigă premii impresionante!</p>
+  </header>
+
+  <!-- DESPRE CONCURS -->
+  <section class="container my-5">
+    <h2 class="section-title">Despre concurs</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p>
+          Concursul Național de Matematică 2025 este o competiție dedicată elevilor pasionați de matematică din întreaga țară. 
+          Scopul acestuia este de a încuraja gândirea logică, creativitatea și spiritul competitiv. 
+          Participanții vor rezolva probleme complexe, vor colabora în echipe și vor demonstra abilități remarcabile.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img id="img1" src="/images/hacking.png" alt="Matematică" class="img-fluid rounded shadow fade-in">
+      </div>
+    </div>
+  </section>
+
+  <!-- PREMII -->
+  <section class="container my-5">
+    <h2 class="section-title">Premii</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm fade-in" id="img2">
+          <img src="/images/premiu1.png" class="card-img-top" alt="Premiul 1">
+          <div class="card-body">
+            <h5 class="card-title">Premiul I</h5>
+            <p class="card-text">Laptop performant + Diplomă de excelență</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm fade-in" id="img3">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" class="card-img-top" alt="Premiul 2">
+          <div class="card-body">
+            <h5 class="card-title">Premiul II</h5>
+            <p class="card-text">Tabletă grafică + Medalie de argint</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm fade-in" id="img4">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" class="card-img-top" alt="Premiul 3">
+          <div class="card-body">
+            <h5 class="card-title">Premiul III</h5>
+            <p class="card-text">Set de cărți + Medalie de bronz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEME TEHNOLOGICE -->
+  <section class="container my-5">
+    <h2 class="section-title">Teme Tehnologice</h2>
+    <div class="row g-4">
+      <!-- Card 1: Cybersecuritate -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm tech-card">
+          <div class="card-body">
+            <h5 class="card-title d-flex align-items-center">
+              <i class="bi bi-shield-lock-fill text-primary me-2"></i> Cybersecuritate
+            </h5>
+            <p class="card-text mt-2">
+              Cybersecuritatea reprezintă ansamblul de practici, tehnologii și procese utilizate pentru a proteja sistemele informatice, rețelele și datele împotriva atacurilor, accesului neautorizat sau distrugerii. Într-o lume digitală în continuă evoluție, protejarea informațiilor devine o prioritate esențială pentru organizații și utilizatori individuali. Atacurile cibernetice pot avea forme variate, de la viruși și phishing, până la atacuri complexe de tip ransomware. Prin implementarea unor politici de securitate riguroase, utilizarea autentificării multifactor și actualizarea constantă a sistemelor, se pot preveni breșele de securitate. Educația în domeniul cybersecurității este, de asemenea, esențială — utilizatorii trebuie să cunoască riscurile și să adopte comportamente sigure online. O societate digitală sigură se bazează pe responsabilitatea comună de a proteja informațiile și confidențialitatea datelor personale.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Rețele -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm tech-card">
+          <div class="card-body">
+            <h5 class="card-title d-flex align-items-center">
+              <i class="bi bi-diagram-3-fill text-success me-2"></i> Rețele
+            </h5>
+            <p class="card-text mt-2">
+              Rețelele de calculatoare stau la baza comunicației moderne, conectând dispozitive din întreaga lume și permițând schimbul rapid de date și informații. O rețea poate varia de la una locală (LAN), utilizată într-o școală sau companie, până la rețele globale complexe precum Internetul. Funcționarea unei rețele se bazează pe protocoale de comunicare, cum ar fi TCP/IP, care asigură transmiterea corectă a datelor. Administratorii de rețea se ocupă de configurarea și întreținerea echipamentelor, precum routere și switch-uri, pentru a garanta stabilitatea conexiunilor. În prezent, rețelele wireless (Wi-Fi) și tehnologiile 5G oferă mobilitate și performanță sporită. Securitatea și optimizarea traficului sunt aspecte critice în administrarea rețelelor moderne, deoarece creșterea numărului de dispozitive conectate aduce provocări legate de performanță și protecția datelor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Interoperabilitate Software -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm tech-card">
+          <div class="card-body">
+            <h5 class="card-title d-flex align-items-center">
+              <i class="bi bi-arrows-fullscreen text-warning me-2"></i> Interoperabilitate Software
+            </h5>
+            <p class="card-text mt-2">
+              Interoperabilitatea software se referă la capacitatea diferitelor aplicații și sisteme informatice de a comunica și colabora eficient, indiferent de platforma, limbajul de programare sau tehnologia pe care o utilizează. Într-o lume digitalizată, unde organizațiile folosesc soluții diverse, interoperabilitatea devine esențială pentru eficiență și inovație. Prin utilizarea standardelor deschise și a API-urilor (interfețe de programare a aplicațiilor), sistemele pot partaja date și funcționalități fără bariere. De exemplu, un sistem medical interoperabil permite schimbul de informații între spitale, laboratoare și farmacii, îmbunătățind calitatea serviciilor oferite pacienților. Lipsa interoperabilității poate duce la pierderi de timp, erori și costuri suplimentare. Astfel, proiectarea software-ului modern trebuie să pună accent pe compatibilitate, extensibilitate și respectarea standardelor internaționale de comunicare digitală.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÎNSCRIERE -->
+  <section class="container my-5">
+    <h2 class="section-title">Înscrie-te acum!</h2>
+    <form class="row g-3 mx-auto" style="max-width: 600px;">
+      <div class="col-md-6">
+        <label for="nume" class="form-label">Nume</label>
+        <input type="text" class="form-control" id="nume" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="col-12">
+        <label for="scoala" class="form-label">Școala</label>
+        <input type="text" class="form-control" id="scoala" required>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary w-100">Trimite înscrierea</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Concursul Național de Matematică. Toate drepturile rezervate.</p>
+  </footer>
+
+  <!-- SCRIPTURI -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Afișează imaginile cu efect după 3 secunde
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
